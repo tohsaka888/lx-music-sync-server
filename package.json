@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node -r ts-node/register -r tsconfig-paths/register ./index.js",
     "dev": "nodemon",
-    "prd": "pm2 start ecosystem.config.js --env production"
+    "prd": "pm2 start ecosystem.config.js --env production",
+    "deploy": "npm install && npm run prd"
   },
   "engines": {
     "node": ">= 16",
